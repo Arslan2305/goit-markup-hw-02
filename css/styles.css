@@ -1,0 +1,18 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Header styles */
+.web-link-color {
+    font-family: 'Raleway'; sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        color: #4D5AE5;
+        text-transform:
+}
