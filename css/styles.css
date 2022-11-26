@@ -1,3 +1,13 @@
+:root {
+    --accent-color: #2E2F42;
+    --secondary-color: #434455;
+    --iris-color: #4D5AE5;
+    --primary-white-color: #FFFFFF;
+    --button-active-color: #404BBF;
+    --cloud-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+}
+
 .list {
     list-style: none;
 }
@@ -6,16 +16,19 @@
     text-decoration: none;
 }
 
-/* Header styles */
-.web-link-color {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: #4D5AE5;
-    text-transform: uppercase;
+body {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
+
+/* WEBSTUDIO */
+
+/* Header styles */
 
 .logo-link {
     font-family: 'Raleway', sans-serif;
@@ -23,41 +36,155 @@
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color: #2E2F42;
+    color: var(--accent-color);
     text-transform: uppercase;
 }
 
+.logo-link-blue {
+    color: var(--iris-color);
+}
+
 .menu-link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+    font-weight: 500;
+    color: var(--accent-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-    color: #434455;
+    color: var(--secondary-color);
 }
 
 .menu-link:active {
-    color: #4D5AE5;
+    color: var(--iris-color);
 }
 
 .mail-adress,
 .phone-number {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-color);
 }
 
-.mail-adress,
 .phone-number:hover,
-.mail-adress,
-.phone-number:focus {
-    color: #434455;
+.mail-adress:hover,
+.phone-number:focus,
+.mail-adress:focus {
+    color: var(--iris-color);
+}
+
+/* HERO */
+
+.hero {
+    background: var(--accent-color);
+}
+
+.head-title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: var(--primary-white-color);
+}
+
+.button-order {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: var(--primary-white-color);
+    background: var(--iris-color);
+    cursor: pointer;
+}
+
+.button-order:hover,
+.button-order:focus {
+    background: var(--iris-color);
+}
+
+.button-order:active {
+    background: var(--button-active-color);
+}
+
+/* < !--Section 1 Feature--> */
+
+.titel {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--accent-color);
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.text {
+    color: var(--secondary-color);
+}
+
+/* /* < !--Section 2 What are we doing-->
+ already used styles */
+
+
+/* < !--Section 3 About our team-->*/
+.team {
+    background: var(--cloud-color);
+}
+
+/* PORTFOLIO */
+
+.portfolio-title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.filters-list {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    color: var(--iris-color);
+    background: var(--cloud-color);
+    text-align: center;
+}
+
+.filters-list:hover,
+.filters-list:focus {
+    color: var(--primary-white-color);
+    background-color: var(--iris-color);
+}
+
+.filters-list:active {
+    color: var(--iris-color);
+}
+
+/* < !--Footer page--> */
+
+.footer {
+    background: var(--accent-color);
+}
+
+.logo-white {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--cloud-color);
+    text-transform: uppercase;
+}
+
+.footer-text {
+    color: var(--footer-text-color);
 }
